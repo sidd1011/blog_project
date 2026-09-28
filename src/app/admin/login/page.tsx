@@ -119,10 +119,7 @@ function LoginForm() {
               <KeyRound className="w-3.5 h-3.5" />
               <span>Admin Credentials</span>
             </div>
-            <div className="text-slate-600 font-mono text-[11px] space-y-0.5">
-              <div>Email: <span className="font-semibold text-slate-900">Sidd@gmail.com</span></div>
-              <div>Password: <span className="font-semibold text-slate-900">Sidd@123</span></div>
-            </div>
+            
           </div>
           <button
             type="button"
