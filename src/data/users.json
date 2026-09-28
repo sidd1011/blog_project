@@ -1,0 +1,35 @@
+[
+  {
+    "id": "usr-siddhartha",
+    "name": "Siddhartha Kumar",
+    "email": "siddhartha@devlearn.in",
+    "role": "admin",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "bio": "Full Stack Engineer & DevOps enthusiast passionate about React, automated QA, and high-performance web systems.",
+    "articlesCount": 18,
+    "status": "active",
+    "joinedDate": "Jan 15, 2024"
+  },
+  {
+    "id": "usr-editorial",
+    "name": "DevLearn Editorial Team",
+    "email": "editorial@devlearn.in",
+    "role": "editor",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    "bio": "Curators of top tutorials, code walkthroughs, and industry testing methodologies.",
+    "articlesCount": 24,
+    "status": "active",
+    "joinedDate": "Mar 10, 2024"
+  },
+  {
+    "id": "usr-rohit",
+    "name": "Rohit Verma",
+    "email": "rohit@devlearn.in",
+    "role": "author",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+    "bio": "QA Automation Specialist, Cypress champion and API testing researcher.",
+    "articlesCount": 12,
+    "status": "active",
+    "joinedDate": "Jun 22, 2024"
+  }
+]

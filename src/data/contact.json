@@ -1,0 +1,10 @@
+[
+  {
+    "id": "msg-1",
+    "name": "Amit Sharma",
+    "email": "amit@example.com",
+    "message": "Hi, loved your React deployment guide! Very well structured and helpful.",
+    "createdAt": "2026-09-21T10:30:00Z",
+    "isRead": true
+  }
+]

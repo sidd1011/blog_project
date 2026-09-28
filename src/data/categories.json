@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cat-react",
+    "name": "React",
+    "slug": "react",
+    "description": "Learn React from basics to advanced, hooks, state management, and modern best practices.",
+    "icon": "Code2",
+    "color": "#3062F6",
+    "count": 12
+  },
+  {
+    "id": "cat-javascript",
+    "name": "JavaScript",
+    "slug": "javascript",
+    "description": "JS basics, ES6+, modern features, async patterns, event loops, and engine internals.",
+    "icon": "FileCode",
+    "color": "#F7DF1E",
+    "count": 8
+  },
+  {
+    "id": "cat-qa-testing",
+    "name": "QA & Testing",
+    "slug": "qa-testing",
+    "description": "Testing tools, strategies, best practices, automation testing, and quality assurance.",
+    "icon": "CheckCircle2",
+    "color": "#1CD191",
+    "count": 10
+  },
+  {
+    "id": "cat-api",
+    "name": "API",
+    "slug": "api",
+    "description": "REST APIs, Postman, automation, GraphQL, webhooks, and secure API architecture.",
+    "icon": "Network",
+    "color": "#FF6C37",
+    "count": 7
+  },
+  {
+    "id": "cat-devops",
+    "name": "DevOps",
+    "slug": "devops",
+    "description": "Docker, Kubernetes, CI/CD, Prometheus, Grafana, cloud deployment, and automation.",
+    "icon": "Server",
+    "color": "#6206F1",
+    "count": 6
+  },
+  {
+    "id": "cat-linux",
+    "name": "Linux",
+    "slug": "linux",
+    "description": "Linux commands, server setup, shell scripting, permissions, and performance tuning.",
+    "icon": "Terminal",
+    "color": "#E95420",
+    "count": 5
+  },
+  {
+    "id": "cat-seo",
+    "name": "SEO",
+    "slug": "seo",
+    "description": "Rankings, indexing, Core Web Vitals, metadata, sitemaps, and search optimization.",
+    "icon": "Search",
+    "color": "#059669",
+    "count": 4
+  },
+  {
+    "id": "cat-tools",
+    "name": "Tools",
+    "slug": "tools",
+    "description": "Useful tools and productivity boosters for modern full-stack web developers.",
+    "icon": "Wrench",
+    "color": "#8B5CF6",
+    "count": 3
+  }
+]

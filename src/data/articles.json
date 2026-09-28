@@ -1,0 +1,373 @@
+[
+  {
+    "id": "art-react-deploy",
+    "slug": "react-website-deploy-kaise-karein",
+    "title": "React Website Deploy Kaise Karein – Step by Step Guide",
+    "excerpt": "Is guide mein aap seekhenge ki React application ko Vercel ya Netlify par free mein kaise deploy karein. Saath hi custom domain setup aur build fixes bhi samjhenge.",
+    "category": "React",
+    "categorySlug": "react",
+    "tags": [
+      "React",
+      "Vercel",
+      "Deployment",
+      "Frontend",
+      "Vite"
+    ],
+    "author": {
+      "id": "usr-siddhartha",
+      "name": "Siddhartha",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "role": "Senior Technical Writer",
+      "bio": "Full Stack Engineer & DevOps enthusiast passionate about React and scalable cloud applications."
+    },
+    "publishedAt": "Sep 20, 2026",
+    "updatedAt": "Sep 22, 2026",
+    "readingTime": "8 min read",
+    "featuredImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "React Website Deploy Kaise Karein Step by Step Guide on Vercel and Netlify",
+    "isFeatured": true,
+    "status": "published",
+    "views": 4820,
+    "tableOfContents": [
+      {
+        "id": "introduction",
+        "text": "1. Introduction",
+        "level": 2
+      },
+      {
+        "id": "what-you-need",
+        "text": "2. What You Need",
+        "level": 2
+      },
+      {
+        "id": "step-1-project-setup",
+        "text": "3. Step 1: Project Setup",
+        "level": 2
+      },
+      {
+        "id": "step-2-build-the-project",
+        "text": "4. Step 2: Build the Project",
+        "level": 2
+      },
+      {
+        "id": "step-3-deploy-to-vercel",
+        "text": "5. Step 3: Deploy to Vercel",
+        "level": 2
+      },
+      {
+        "id": "common-issues",
+        "text": "6. Common Issues & Routing Fix",
+        "level": 2
+      },
+      {
+        "id": "conclusion",
+        "text": "7. Conclusion",
+        "level": 2
+      }
+    ],
+    "seo": {
+      "metaTitle": "React Website Deploy Kaise Karein – Step by Step Guide (2026)",
+      "metaDescription": "React website ko Vercel aur Netlify par free mein deploy karne ka aasan step-by-step Hindi guide. Learn GitHub connect, build configuration, and custom domain setup.",
+      "canonicalUrl": "https://devlearn.in/blog/react-website-deploy-kaise-karein",
+      "focusKeyword": "React website deploy kaise karein",
+      "ogImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=1200&q=80",
+      "schemaType": "TechArticle"
+    },
+    "content": "## 1. Introduction\n\nReact ek popular JavaScript library hai jiska use karke hum fast aur interactive web applications bana sakte hain. Is guide mein hum step by step dekhenge ki React website ko free mein Vercel aur Netlify par kaise deploy karein.\n\nModern web development mein continuous deployment ka use hota hai. Jaise hi aap GitHub par naya code push karenge, aapki website automatically re-deploy ho jayegi.\n\n---\n\n## 2. What You Need\n\nIs deployment guide ko follow karne ke liye aapke system mein ye basic requirements honi chahiye:\n\n- [x] Node.js installed on your system (v18 ya latest)\n- [x] GitHub account create kiya hua ho\n- [x] Vercel account (free tier is sufficient)\n- [x] A React project (Vite ya Create React App)\n\n---\n\n## 3. Step 1: Project Setup\n\nSabse pehle ek naya React project banayein ya existing project use karein. Vite use karna fastest tareeka hai:\n\n```bash\n# Check Node version\nnode -v\n\n# Install Vite (if not installed)\nnpm create vite@latest my-app\n\ncd my-app\nnpm install\n```\n\nLocal development server check karne ke liye run karein:\n\n```bash\nnpm run dev\n```\n\n---\n\n## 4. Step 2: Build the Project\n\nDeploy karne se pehle local build verify karna zaroori hai taaki production mein koi TypeScript ya syntax error na aaye:\n\n```bash\nnpm run build\n```\n\nAapke project root folder mein ek `dist` ya `build` folder generate hoga. Ye optimized static production bundle hai.\n\n---\n\n## 5. Step 3: Deploy to Vercel\n\nVercel React aur Next.js projects ke liye sabse fast aur seamless hosting platform hai:\n\n1. Apna code GitHub repository mein push karein:\n```bash\ngit init\ngit add .\ngit commit -m \"Initial commit\"\ngit remote add origin https://github.com/username/my-app.git\ngit push -u origin main\n```\n2. **vercel.com** par login karein aur **Add New Project** par click karein.\n3. Apni GitHub repository select karein aur Import par click karein.\n4. Build and Output Settings mein Framework Preset 'Vite' select karein aur **Deploy** button dabayein.\n\nSirf 60 seconds ke andar aapki website live URL par available ho jayegi!\n\n---\n\n## 6. Common Issues & Routing Fix\n\nReact Router (SPA) use karte waqt agar page refresh karne par **404 Not Found** error aata hai, toh project root mein ek `vercel.json` file banayein:\n\n```json\n{\n  \"rewrites\": [\n    { \"source\": \"/(.*)\", \"destination\": \"/index.html\" }\n  ]\n}\n```\n\nYe code Vercel ko batata hai ki saari dynamic routing requests ko `index.html` par point kare.\n\n---\n\n## 7. Conclusion\n\nCongratulations! Aapki React website successfully internet par live ho chuki hai. Aage aap custom domain connect kar sakte hain aur SSL certificate Vercel dwara automatically provide kiya jata hai."
+  },
+  {
+    "id": "art-postman-api",
+    "slug": "postman-api-testing-tutorial-beginners",
+    "title": "Postman API Testing Tutorial for Beginners",
+    "excerpt": "Postman ka use karke API testing kaise karein, is guide mein hum step by step samjhenge, collections, environments aur automated test scripts ke saath.",
+    "category": "API",
+    "categorySlug": "api",
+    "tags": [
+      "API",
+      "Postman",
+      "Testing",
+      "QA",
+      "Automation"
+    ],
+    "author": {
+      "id": "usr-rohit",
+      "name": "Rohit Verma",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      "role": "QA Engineer",
+      "bio": "QA Automation Specialist, Cypress champion and API testing researcher."
+    },
+    "publishedAt": "Sep 18, 2026",
+    "updatedAt": "Sep 19, 2026",
+    "readingTime": "10 min read",
+    "featuredImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Postman API Testing Tutorial for Beginners Complete Guide",
+    "isFeatured": false,
+    "status": "published",
+    "views": 3940,
+    "tableOfContents": [
+      {
+        "id": "what-is-api-testing",
+        "text": "1. What is API Testing?",
+        "level": 2
+      },
+      {
+        "id": "setting-up-postman",
+        "text": "2. Setting Up Postman",
+        "level": 2
+      },
+      {
+        "id": "creating-first-request",
+        "text": "3. Creating Your First Request",
+        "level": 2
+      },
+      {
+        "id": "writing-test-scripts",
+        "text": "4. Writing Automated Assertions",
+        "level": 2
+      },
+      {
+        "id": "conclusion",
+        "text": "5. Conclusion",
+        "level": 2
+      }
+    ],
+    "seo": {
+      "metaTitle": "Postman API Testing Tutorial for Beginners (Hindi Guide)",
+      "metaDescription": "Learn API testing with Postman step by step. Create requests, handle auth, set environment variables, and write automated assertions with Chai.js.",
+      "canonicalUrl": "https://devlearn.in/blog/postman-api-testing-tutorial-beginners",
+      "focusKeyword": "Postman API testing tutorial",
+      "ogImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      "schemaType": "TechArticle"
+    },
+    "content": "## 1. What is API Testing?\n\nAPI Testing backend services aur endpoints ki functionality, reliability, performance aur security ko verify karne ke liye ki jaati hai. Postman world ka sabse popular API platform hai jisme aap bina code likhe bhi RESTful requests trigger kar sakte hain.\n\n---\n\n## 2. Setting Up Postman\n\nSabse pehle Postman app download karein ya browser version use karein:\n\n- Visit postman.com and sign up for a free workspace.\n- Workspace create karein jisme aapke collections store rahenge.\n- Environments setup karein (Localhost, Staging, Production URLs ke liye).\n\n---\n\n## 3. Creating Your First Request\n\nPostman mein new HTTP Request banayein:\n\n- **Method**: GET\n- **URL**: `https://jsonplaceholder.typicode.com/posts/1`\n- Click **Send**\n\nAapko response body mein Status Code `200 OK` aur JSON data show hoga.\n\n---\n\n## 4. Writing Automated Assertions\n\nPostman ke 'Tests' tab mein JavaScript syntax use karke automated assertions likhi jaati hain:\n\n```javascript\npm.test(\"Status code is 200 OK\", function () {\n    pm.response.to.have.status(200);\n});\n\npm.test(\"Response time is less than 500ms\", function () {\n    pm.expect(pm.response.responseTime).to.be.below(500);\n});\n```\n\n---\n\n## 5. Conclusion\n\nPostman API test runner se aap pure collection ko ek click mein run karke automated report generate kar sakte hain."
+  },
+  {
+    "id": "art-cypress-testing",
+    "slug": "cypress-testing-beginners-complete-guide",
+    "title": "Cypress Testing for Beginners – Complete Guide",
+    "excerpt": "Cypress kya hai, kaise install karein, first test likhe aur run karein. Is article mein aapko basic se advanced E2E testing sikhayenge.",
+    "category": "QA & Testing",
+    "categorySlug": "qa-testing",
+    "tags": [
+      "Cypress",
+      "Testing",
+      "QA",
+      "E2E",
+      "JavaScript"
+    ],
+    "author": {
+      "id": "usr-rohit",
+      "name": "Rohit Verma",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
+      "role": "QA Engineer",
+      "bio": "QA Automation Specialist, Cypress champion and API testing researcher."
+    },
+    "publishedAt": "Sep 15, 2026",
+    "updatedAt": "Sep 16, 2026",
+    "readingTime": "12 min read",
+    "featuredImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Cypress Testing for Beginners Complete Guide",
+    "isFeatured": false,
+    "status": "published",
+    "views": 5210,
+    "tableOfContents": [
+      {
+        "id": "why-cypress",
+        "text": "1. Why Choose Cypress?",
+        "level": 2
+      },
+      {
+        "id": "installation",
+        "text": "2. Installation & Setup",
+        "level": 2
+      },
+      {
+        "id": "writing-first-test",
+        "text": "3. Writing Your First E2E Test",
+        "level": 2
+      },
+      {
+        "id": "running-tests",
+        "text": "4. Running Tests in Cypress GUI",
+        "level": 2
+      }
+    ],
+    "seo": {
+      "metaTitle": "Cypress Testing for Beginners – Complete Guide (2026)",
+      "metaDescription": "Complete guide on Cypress E2E automation testing in Hindi. Learn installation, best practices, selectors, assertion commands, and CI test runner.",
+      "canonicalUrl": "https://devlearn.in/blog/cypress-testing-beginners-complete-guide",
+      "focusKeyword": "Cypress testing complete guide",
+      "ogImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+      "schemaType": "TechArticle"
+    },
+    "content": "## 1. Why Choose Cypress?\n\nCypress ek next-generation front-end testing tool hai jo modern web applications ke liye banaya gaya hai. Selenium ki tarah isme complex driver setup nahi karna padta kyunki ye seedhe browser loop ke andar execute hota hai.\n\n---\n\n## 2. Installation & Setup\n\nApne project folder mein Cypress ko install karein:\n\n```bash\nnpm install cypress --save-dev\n```\n\nCypress Test Runner ko open karne ke liye command run karein:\n\n```bash\nnpx cypress open\n```\n\n---\n\n## 3. Writing Your First E2E Test\n\n`cypress/e2e/home.cy.js` file banayein aur ye test code likhein:\n\n```javascript\ndescribe('DevLearn Home Page Test', () => {\n  it('successfully loads and searches tutorials', () => {\n    cy.visit('http://localhost:3000');\n    cy.contains('Learn. Build. Grow.').should('be.visible');\n    cy.get('input[placeholder*=\"Search\"]').type('React{enter}');\n    cy.url().should('include', '/search');\n  });\n});\n```\n\n---\n\n## 4. Running Tests in Cypress GUI\n\nCypress interactive dashboard mein real-time DOM snapshots, time-travel debugging aur network stubbing provide karta hai jisse flaky tests ko instantly debug kiya ja sakta hai."
+  },
+  {
+    "id": "art-grafana-prometheus",
+    "slug": "grafana-prometheus-setup-monitoring",
+    "title": "Grafana + Prometheus Setup for Monitoring (Beginner Guide)",
+    "excerpt": "Is guide mein aap step by step seekhenge ki Grafana aur Prometheus ko Docker ke sath setup karke server metrics kaise track karte hain.",
+    "category": "DevOps",
+    "categorySlug": "devops",
+    "tags": [
+      "DevOps",
+      "Grafana",
+      "Prometheus",
+      "Docker",
+      "Monitoring"
+    ],
+    "author": {
+      "id": "usr-siddhartha",
+      "name": "Siddhartha",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "role": "Senior Technical Writer",
+      "bio": "Full Stack Engineer & DevOps enthusiast passionate about React and scalable cloud applications."
+    },
+    "publishedAt": "Sep 12, 2026",
+    "updatedAt": "Sep 14, 2026",
+    "readingTime": "10 min read",
+    "featuredImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Grafana and Prometheus Monitoring Setup with Docker Guide",
+    "isFeatured": false,
+    "status": "published",
+    "views": 3120,
+    "tableOfContents": [
+      {
+        "id": "why-monitoring",
+        "text": "1. Why Infrastructure Monitoring?",
+        "level": 2
+      },
+      {
+        "id": "docker-compose-setup",
+        "text": "2. Docker Compose Configuration",
+        "level": 2
+      },
+      {
+        "id": "grafana-dashboards",
+        "text": "3. Creating Grafana Dashboards",
+        "level": 2
+      }
+    ],
+    "seo": {
+      "metaTitle": "Grafana + Prometheus Setup for Monitoring (Beginner Guide)",
+      "metaDescription": "Step by step guide to setup Grafana and Prometheus using Docker Compose. Monitor CPU, RAM, and application metrics with alert rules.",
+      "canonicalUrl": "https://devlearn.in/blog/grafana-prometheus-setup-monitoring",
+      "focusKeyword": "Grafana Prometheus monitoring setup",
+      "ogImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+      "schemaType": "TechArticle"
+    },
+    "content": "## 1. Why Infrastructure Monitoring?\n\nProduction servers par downtime aur performance degradation ko prevent karne ke liye real-time metrics tracking bahut zaroori hai. Prometheus time-series data scrap karta hai aur Grafana us data ko beautiful interactive dashboards mein display karta hai.\n\n---\n\n## 2. Docker Compose Configuration\n\n`docker-compose.yml` file banayein:\n\n```yaml\nversion: '3.8'\nservices:\n  prometheus:\n    image: prom/prometheus\n    ports:\n      - \"9090:9090\"\n    volumes:\n      - ./prometheus.yml:/etc/prometheus/prometheus.yml\n  grafana:\n    image: grafana/grafana\n    ports:\n      - \"3001:3000\"\n    depends_on:\n      - prometheus\n```\n\nRun karne ke liye simple command execute karein:\n\n```bash\ndocker compose up -d\n```\n\n---\n\n## 3. Creating Grafana Dashboards\n\nBrowser mein `http://localhost:3001` open karein, default credentials `admin / admin` se login karein aur Prometheus data source configure karke pre-built Node Exporter dashboards import karein."
+  },
+  {
+    "id": "art-gsc-indexing",
+    "slug": "google-search-console-indexing-issues-fix",
+    "title": "Google Search Console Indexing Issues Kaise Fix Karein",
+    "excerpt": "Agar aapki website ke kuch pages index nahi ho rahe, to is guide mein Crawled currently not indexed aur Discovered issues solve karein.",
+    "category": "SEO",
+    "categorySlug": "seo",
+    "tags": [
+      "SEO",
+      "Google Search Console",
+      "Indexing",
+      "Sitemaps",
+      "Webmaster"
+    ],
+    "author": {
+      "id": "usr-editorial",
+      "name": "DevLearn Editorial Team",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+      "role": "Editor",
+      "bio": "Curators of top tutorials, code walkthroughs, and industry testing methodologies."
+    },
+    "publishedAt": "Sep 10, 2026",
+    "updatedAt": "Sep 11, 2026",
+    "readingTime": "7 min read",
+    "featuredImage": "https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Google Search Console Indexing Issues Kaise Fix Karein",
+    "isFeatured": false,
+    "status": "published",
+    "views": 4410,
+    "tableOfContents": [
+      {
+        "id": "common-indexing-errors",
+        "text": "1. Common Indexing Statuses",
+        "level": 2
+      },
+      {
+        "id": "fixing-crawled-not-indexed",
+        "text": "2. Fixing 'Crawled - Currently Not Indexed'",
+        "level": 2
+      },
+      {
+        "id": "sitemap-and-robots",
+        "text": "3. Sitemap.xml & Robots.txt Audits",
+        "level": 2
+      }
+    ],
+    "seo": {
+      "metaTitle": "Google Search Console Indexing Issues Kaise Fix Karein (2026)",
+      "metaDescription": "Fix Crawled - currently not indexed and Discovered - currently not indexed errors in Google Search Console. Boost organic rankings with verified SEO checklist.",
+      "canonicalUrl": "https://devlearn.in/blog/google-search-console-indexing-issues-fix",
+      "focusKeyword": "Google Search Console indexing issues fix",
+      "ogImage": "https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?auto=format&fit=crop&w=1200&q=80",
+      "schemaType": "Article"
+    },
+    "content": "## 1. Common Indexing Statuses\n\nGoogle Search Console mein Page Indexing report check karte waqt developers aksar do common errors dekhte hain: 'Discovered – currently not indexed' aur 'Crawled – currently not indexed'.\n\n---\n\n## 2. Fixing 'Crawled - Currently Not Indexed'\n\nIska matlab hai ki Googlebot ne aapka page visit kiya lekin content quality ya thin content ki wajah se usko index nahi kiya. Isko fix karne ke liye:\n\n- Article mein comprehensive H1, H2, H3 hierarchy banayein.\n- Unique value add karein aur generic AI re-hashes avoid karein.\n- Internal links add karein related articles se.\n\n---\n\n## 3. Sitemap.xml & Robots.txt Audits\n\nEnsure karein ki aapka `/sitemap.xml` update hota rahe aur `/robots.txt` important pages ko disallow na kare."
+  },
+  {
+    "id": "art-linux-commands",
+    "slug": "linux-commands-for-developers-must-know",
+    "title": "Linux Commands for Developers – Must Know",
+    "excerpt": "Get the latest top tutorials and tips useful tools and easy to navigate design so your app runs faster. Text grep, chmod, systemctl and SSH commands explained.",
+    "category": "Linux",
+    "categorySlug": "linux",
+    "tags": [
+      "Linux",
+      "DevOps",
+      "CLI",
+      "Bash",
+      "Terminal"
+    ],
+    "author": {
+      "id": "usr-siddhartha",
+      "name": "Siddhartha",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "role": "Senior Technical Writer",
+      "bio": "Full Stack Engineer & DevOps enthusiast passionate about React and scalable cloud applications."
+    },
+    "publishedAt": "Sep 7, 2026",
+    "updatedAt": "Sep 8, 2026",
+    "readingTime": "9 min read",
+    "featuredImage": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Must Know Linux Commands for Developers Guide",
+    "isFeatured": false,
+    "status": "published",
+    "views": 6120,
+    "tableOfContents": [
+      {
+        "id": "file-navigation",
+        "text": "1. File Navigation & Inspection",
+        "level": 2
+      },
+      {
+        "id": "process-management",
+        "text": "2. Process & Memory Management",
+        "level": 2
+      },
+      {
+        "id": "network-troubleshooting",
+        "text": "3. Network Troubleshooting",
+        "level": 2
+      }
+    ],
+    "seo": {
+      "metaTitle": "Linux Commands for Developers – Must Know (Terminal Cheatsheet)",
+      "metaDescription": "Essential Linux commands every software developer, DevOps engineer, and system admin must know. Master grep, find, htop, systemctl, chmod, and curl.",
+      "canonicalUrl": "https://devlearn.in/blog/linux-commands-for-developers-must-know",
+      "focusKeyword": "Linux commands for developers",
+      "ogImage": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?auto=format&fit=crop&w=1200&q=80",
+      "schemaType": "TechArticle"
+    },
+    "content": "## 1. File Navigation & Inspection\n\nDaily backend engineering aur server debugging ke liye Linux terminal ki command mastering zaroori hai:\n\n```bash\n# Find text inside files recursively\ngrep -rnw '/var/log/nginx/' -e '502 Bad Gateway'\n\n# Real-time tailing of log files\ntail -f /var/log/application.log\n```\n\n---\n\n## 2. Process & Memory Management\n\nResource hogging processes identify karne ke liye:\n\n```bash\n# Interactive process monitor\nhtop\n\n# Memory status\nfree -h\n\n# Disk space consumption\ndf -h\n```\n\n---\n\n## 3. Network Troubleshooting\n\nPort listening aur server connectivity check karne ke liye `netstat` ya `ss` commands ka upyog karein:\n\n```bash\nss -tulpn | grep 3000\n```"
+  }
+]
