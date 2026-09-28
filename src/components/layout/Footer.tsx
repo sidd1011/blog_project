@@ -185,6 +185,11 @@ export default function Footer() {
                   Our Mission
                 </Link>
               </li>
+              <li>
+                <Link href="/admin/login" className="hover:text-white transition-colors">
+                  Admin Portal
+                </Link>
+              </li>
             </ul>
           </div>
 

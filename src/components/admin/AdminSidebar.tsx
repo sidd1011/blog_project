@@ -30,9 +30,14 @@ import {
   ExternalLink,
   Code,
   ShieldCheck,
+  LogOut,
 } from "lucide-react";
 
-export default function AdminSidebar() {
+interface AdminSidebarProps {
+  onLogout?: () => void;
+}
+
+export default function AdminSidebar({ onLogout }: AdminSidebarProps = {}) {
   const pathname = usePathname();
 
   const menuItems = [
@@ -128,6 +133,29 @@ export default function AdminSidebar() {
           <span>View Public Site</span>
           <ExternalLink className="w-3.5 h-3.5" />
         </Link>
+
+        {/* Logout Button */}
+        <button
+          type="button"
+          onClick={async () => {
+            if (onLogout) {
+              onLogout();
+            } else {
+              try {
+                await fetch("/api/auth/logout", { method: "POST" });
+              } finally {
+                window.location.href = "/admin/login";
+              }
+            }
+          }}
+          className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-rose-400 hover:text-rose-200 hover:bg-rose-950/40 border border-transparent hover:border-rose-900/50 transition-colors text-left cursor-pointer"
+        >
+          <span className="flex items-center gap-2">
+            <LogOut className="w-3.5 h-3.5" />
+            <span>Sign Out</span>
+          </span>
+          <span className="text-[10px] text-slate-500 font-mono">Exit</span>
+        </button>
 
         <div className="p-3 bg-slate-950 rounded-xl border border-slate-800/80 text-[11px] text-slate-400 flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
